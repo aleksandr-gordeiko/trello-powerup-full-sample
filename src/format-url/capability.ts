@@ -11,7 +11,7 @@ export function getFormatUrl(_t: Trello.PowerUp.IFrame, options: Trello.PowerUp.
             size: 'contain'
         },
         actions: [{
-            text: 'Download',
+            text: 'Action',
             callback: (_tc: Trello.PowerUp.IFrame) => {
                 console.log('Action clicked');
             },

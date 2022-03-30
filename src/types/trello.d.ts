@@ -3,12 +3,6 @@
  * See https://github.com/tatablack/leaner-coffee-powerup for more info.
  * Available under the Apache-2.0 License
  */
-declare global {
-    interface Window {
-        TrelloPowerUp: Trello.PowerUp;
-        locale: string;
-    }
-}
 
 export namespace Trello {
     namespace Callback {

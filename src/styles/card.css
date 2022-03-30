@@ -1,10 +1,4 @@
-.card-container {
-  margin-top: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.card-container > .card {
+.data-container > .card {
   display: flex;
   break-inside: avoid;
   margin-bottom: 6px;
@@ -15,16 +9,7 @@
   cursor: default;
 }
 
-.card-container > .card:hover {
+.data-container > .card:hover {
   background-color: #091e4214;
 }
 
-.card-container > .card > .card-markdown {
-  padding: 6px;
-  width: calc(100vw - 120px);
-}
-
-.card-container > .card > .card-delete-button-container {
-  float: right;
-  margin: auto;
-}

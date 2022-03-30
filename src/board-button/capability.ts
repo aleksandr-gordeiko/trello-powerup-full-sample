@@ -7,10 +7,10 @@ export function getBoardButton(_t: Trello.PowerUp.IFrame, props: CapabilityProps
             dark: props.baseUrl + props.icon.dark,
             light: props.baseUrl + props.icon.light
         },
-        text: 'Notes',
+        text: 'Data',
         callback: (tc: Trello.PowerUp.IFrame) => {
             return tc.modal({
-                title: 'Notes',
+                title: 'Data',
                 url: tc.signUrl('./board-button.html'),
                 fullscreen: false
             });

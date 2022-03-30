@@ -1,25 +1,24 @@
 import React, {useEffect, useState} from 'react';
-import {useProvidedTrello} from '@optro/ui-react';
-import {getAuth, setAuth} from '../api/power-up';
+// import {useProvidedTrello} from '@optro/ui-react';
 import '../styles/card.css';
 
 function ShowAuthorization() {
-    const t = useProvidedTrello();
-    const [authStatus, setAuthStatus] = useState<boolean | null>(null);
+    // const t = useProvidedTrello();
+    const [authStatus/*, setAuthStatus*/] = useState<boolean | null>(null);
 
     const refresh = async () => {
-        const result: boolean = await getAuth(t);
-        setAuthStatus(result);
+        // const result: boolean = await getAuth(t);
+        // setAuthStatus(result);
     }
 
     const changeAuth = async () => {
-        await setAuth(t, !authStatus);
+        // await setAuth(t, !authStatus);
         await refresh();
     }
 
     useEffect(() => {
-        refresh();
-    }, []);
+        refresh().then(() => {});
+    });
 
     return (
         <div>
@@ -28,7 +27,7 @@ function ShowAuthorization() {
             )}
             {authStatus !== null && (
                 <div>
-                    <p>Authorize the Notes Power-Up</p>
+                    <p>Authorize the Power-Up</p>
                     <p>
                         <span>Current Status: </span>
                         <span style={{color: authStatus ? 'green' : 'red'}}>

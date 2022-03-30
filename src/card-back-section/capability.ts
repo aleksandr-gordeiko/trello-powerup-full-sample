@@ -3,7 +3,7 @@ import {Trello} from '../types/trello';
 
 export function getCardBackSection(t: Trello.PowerUp.IFrame, props: CapabilityProps): Trello.PowerUp.CardBackSection {
     return {
-        title: 'Notes',
+        title: 'Data',
         icon: props.baseUrl + props.icon.dark,
         content: {
             type: 'iframe',
